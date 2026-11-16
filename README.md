@@ -1,8 +1,8 @@
 # NT106 - Assignment 3 - TCP user management
 
 Repository: https://github.com/Dotuantai24521545/BaiTap3_ClientServer_TCP
-Visibility: private. Submission representative and implementer: Tai.
-Teacher invitation status is recorded in TaiLieu/github-publication.json after the source push.
+Visibility: public. Submission representative and implementer: Tai.
+Anyone can read or clone this public repository without an invitation. Direct write access is restricted to the owner.
 
 ## Verified core suites
 
