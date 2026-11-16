@@ -1,0 +1,4 @@
+Synthetic Users rows=1 (preserved)
+Canonical NguoiDung rows=4
+Two same-password accounts have independent hash and salt: verified, credential material omitted.
+Test database=NT106_Bai3_Test_20261116_182328_d4c9

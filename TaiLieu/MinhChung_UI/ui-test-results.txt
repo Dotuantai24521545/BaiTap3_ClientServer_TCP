@@ -1,0 +1,25 @@
+PASS U01 empty registration is rejected on the actual form before connecting
+PASS U02 actual register button rejects mismatched confirmation
+PASS U03 actual register button rejects malformed email before TCP
+PASS U04 register button is disabled during real SQL/TCP request
+PASS U05 actual registration inserts SQL account, reports success and leaves UI responsive
+PASS U06 duplicate registration shows declared friendly error and clears both password boxes
+PASS U07 empty login is rejected on actual form
+PASS U08 short password is rejected before connecting
+PASS U09 invalid server IP is rejected on actual form
+PASS U10 login, registration link and connection settings are locked while waiting
+PASS U11 wrong password shows friendly AUTH_FAILED and clears password box
+PASS U12 missing username and wrong password have identical visible error
+PASS U13 actual login button opens MainForm, hides login, clears password and keeps UI responsive
+PASS U14 MainForm locks profile/logout buttons during refresh
+PASS U15 actual refresh button displays changed SQL data received through TCP
+PASS U16 actual logout button returns login with no retained password
+PASS U17 closing actual MainForm also closes login/socket and removes session
+PASS U18 eight RegisterForm cancellations during pending connection leave no session or unhandled UI error
+PASS U19 bidirectional packet blackhole with no FIN/RST triggers client deadline and returns login while UI stays responsive
+PASS U20 server removes blackholed peer using its actual default 45-second read timeout
+PASS U21 all recorded UI notices are friendly and contain no exception class names
+NOT_RUN physical Wi-Fi adapter loss and two-machine LAN; blackhole test is a transport simulation.
+UI automation sets real control text and invokes real Click/FormClosing handlers; it is not a human typing session.
+Modal notices are recorded through an injected IUserDialogs; normal app still uses MessageBox.
+ExitCode=0

@@ -1,0 +1,9 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{53BCD662-3954-49C2-8210-BE8E95202B30}</ProjectGuid><OutputType>WinExe</OutputType><RootNamespace>UserManagement.Client</RootNamespace><AssemblyName>UserManagement.Client</AssemblyName><TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><LangVersion>7.3</LangVersion><OutputPath>bin\$(Configuration)\</OutputPath><DebugType>pdbonly</DebugType><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects><Deterministic>true</Deterministic></PropertyGroup>
+  <ItemGroup><Reference Include="System" /><Reference Include="System.Core" /><Reference Include="System.Xml" /><Reference Include="System.Runtime.Serialization" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Drawing" /></ItemGroup>
+  <ItemGroup><Compile Include="*.cs" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="LoginForm.resx"><DependentUpon>LoginForm.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="RegisterForm.resx"><DependentUpon>RegisterForm.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="MainForm.resx"><DependentUpon>MainForm.cs</DependentUpon></EmbeddedResource></ItemGroup>
+  <ItemGroup><ProjectReference Include="..\UserManagement.Shared\UserManagement.Shared.csproj"><Name>UserManagement.Shared</Name><Project>{F0623358-4F8A-4F37-8F8D-F1A2166E22E3}</Project></ProjectReference></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,41 @@
+PASS F01 UTF-8 and embedded newline survive one-byte reads
+PASS F02 coalesced frames remain separate
+PASS F03 clean EOF before next frame
+PASS F04 truncated payload rejected
+PASS F05 invalid zero/oversize frame length rejected
+PASS F05 invalid zero/oversize frame length rejected
+PASS F05 invalid zero/oversize frame length rejected
+PASS F06 malformed JSON rejected
+PASS A01 registration accepted
+PASS A02 duplicate registration rejected
+PASS A03 second account accepted
+PASS A04 same password produces independent salts and hashes
+PASS A05 invalid email rejected server-side
+PASS A06 future birthday rejected
+PASS A07 profile requires authentication
+PASS A08 wrong username/password share one error
+PASS A09 login issues a 256-bit random session token
+PASS A10 response excludes password hash and salt
+PASS A11 own profile returned
+PASS A12 token bound to its connection
+PASS A13 invalid token rejected
+PASS A14 expired session revoked
+PASS A15 logout clears session
+PASS A16 old token rejected after logout
+PASS A17 unknown command has declared error code
+PASS A18 wrong protocol version rejected
+PASS V01 email validation handles control characters
+PASS V02 username whitelist and length validation
+PASS V03 password length validation
+PASS UI01 original forms instantiate and render offscreen (not a live TCP screenshot)
+PASS UI02 client assembly has no SQL data access reference
+PASS N01 two TCP clients each receive twenty distinct messages
+PASS N02 concurrent same-name registration has one winner (test repository)
+PASS N03 login over TCP
+PASS N04 authenticated profile over TCP
+PASS N05 explicit logout over TCP
+PASS N06 EOF/close removes all sessions
+PASS N07 graceful server shutdown
+NOT_RUN real SQL Server registration/login/migration (SQL instance unavailable during this run)
+NOT_RUN two-machine LAN, actual Wi-Fi loss, live screenshot evidence and remote Git publication
+ExitCode=0

@@ -1,0 +1,6 @@
+2026-11-16T19:32:54.8774045+07:00
+SQL=(localdb)\MSSQLLocalDB
+Database=NT106_Bai3_Test_20261116_182328_d4c9
+Synthetic UI account=ui_65345aebb
+SQL lookups/writes have a test-only 650ms delay to measure UI responsiveness.
+No adapter, firewall, route or OS network settings are changed.

@@ -1,0 +1,10 @@
+Time=2026-11-16T18:23:28.2812031+07:00
+OS=Microsoft Windows NT 6.2.9200.0
+CLR=4.0.30319.42000
+SQL instance=(localdb)\MSSQLLocalDB
+Database=NT106_Bai3_Test_20261116_182328_d4c9
+Application repository=System.Data.SqlClient DatabaseHelper (real SQL)
+Evidence image=DrawToBitmap of LIVE connected MainForms and running server log, not an OS desktop screenshot
+Test database is retained. No existing user database was changed or dropped.
+
+TCP=127.0.0.1:53697

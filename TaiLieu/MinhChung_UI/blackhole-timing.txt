@@ -1,0 +1,4 @@
+Packets were consumed and discarded in both directions; sockets intentionally kept open.
+Dropped bytes=245
+Server cleanup elapsed milliseconds=45042
+No Wi-Fi adapter was disabled; this is a reproducible transport-failure simulation.

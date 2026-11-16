@@ -1,0 +1,9 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{AA2C2CDF-F328-4935-8941-E34932BE58BA}</ProjectGuid><OutputType>Exe</OutputType><RootNamespace>UserManagement.Server</RootNamespace><AssemblyName>UserManagement.Server</AssemblyName><TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><LangVersion>7.3</LangVersion><OutputPath>bin\$(Configuration)\</OutputPath><DebugType>pdbonly</DebugType><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects><Deterministic>true</Deterministic></PropertyGroup>
+  <ItemGroup><Reference Include="System" /><Reference Include="System.Core" /><Reference Include="System.Xml" /><Reference Include="System.Runtime.Serialization" /><Reference Include="System.Data" /><Reference Include="System.Configuration" /></ItemGroup>
+  <ItemGroup><Compile Include="*.cs" /></ItemGroup>
+  <ItemGroup><None Include="App.config" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="..\UserManagement.Shared\UserManagement.Shared.csproj"><Name>UserManagement.Shared</Name><Project>{F0623358-4F8A-4F37-8F8D-F1A2166E22E3}</Project></ProjectReference></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

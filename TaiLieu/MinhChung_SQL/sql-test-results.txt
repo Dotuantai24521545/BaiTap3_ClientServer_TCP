@@ -1,0 +1,25 @@
+PASS S01 Setup.sql creates canonical table and server DAL probe succeeds
+PASS S02 migration preserves legacy account, hash/salt and Users table
+PASS S03 repeating Setup.sql does not duplicate migrated users
+PASS S04 SQL UNIQUE Username constraint exists
+PASS S05 two clients exchange 40 messages with the real SQL-backed server
+PASS S06 concurrent duplicate registration inserts exactly one SQL row
+PASS S07 parameterized INSERT preserves Unicode and apostrophe
+PASS S08 two registrations succeed through TCP and SQL
+PASS S09 SQL stores different salts/hashes for the same password
+PASS S10 unknown username and wrong password return AUTH_FAILED over TCP
+PASS S11 server rejects invalid registration over TCP before SQL insert
+PASS S12 migrated legacy account logs in through TCP against real SQL
+PASS S13 logout succeeds against real SQL-backed server
+PASS S14 two authenticated clients coexist using real SQL accounts
+PASS S15 profile and updated LastLogin are read from SQL through TCP
+PASS S16 live TCP profile response contains no password/hash/salt fields
+PASS S17 token cannot be reused on another TCP connection
+PASS S18 captures LIVE MainForms populated by SQL/TCP responses alongside running server log
+PASS S19 expiry rejects token over TCP (server clock advanced by test, no 30-minute wait)
+PASS S20 actual MainForm logout button closes the TCP session and returns login
+PASS S21 closing actual MainForm removes its TCP session
+PASS S22 graceful server stop disconnects two clients and removes all sessions
+PASS S23 a new repository connection sees persisted SQL account and LastLogin
+NOT_RUN physical Wi-Fi loss and two-machine LAN
+ExitCode=0

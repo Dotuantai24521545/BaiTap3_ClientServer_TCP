@@ -1,0 +1,1 @@
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=NT106_Bai3_Test_20261116_182328_d4c9;Integrated Security=True;Connect Timeout=8
